@@ -1,4 +1,3 @@
-// Модальне вікно
 const searchBtn = document.getElementById('search-btn');
 const modal = document.getElementById('search-modal');
 const closeBtn = document.querySelector('.close-btn');
@@ -25,7 +24,6 @@ searchForm.addEventListener('submit', (e) => {
 const btnBackToTop = document.getElementById('btnBackToTop');
 
 if (btnBackToTop) {
-  // показувати / ховати кнопку при скролі
   window.addEventListener('scroll', function () {
     if (window.scrollY > 400) {
       btnBackToTop.classList.add('btn-back-to-top--visible');
@@ -34,7 +32,6 @@ if (btnBackToTop) {
     }
   });
 
-  // плавна прокрутка догори
   btnBackToTop.addEventListener('click', function () {
     window.scrollTo({
       top: 0,
@@ -42,4 +39,5 @@ if (btnBackToTop) {
     });
   });
 }
+
 
